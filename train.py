@@ -139,7 +139,7 @@ num_batches = num_examples / batch_size
 
 STEP = 0
 for epoch in range(start_epoch, config['training']['epochs']):
-    if cur_metric > best_metric:
+    if True:
         # rm old checkpoint
         for ckpt_path in glob.glob(working_dir + '/model.*'):
             os.system("rm %s" % ckpt_path)
